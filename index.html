@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-size: 50px;
+            text-indent: 50px;
+        }
+
+        .button {
+            font-size: 50px;
+        }
+
+        .header {
+            font-size: 60px;
+        }
+
+        .d {
+            display: none;
+        }
+
+        .d-visible .d {
+            display: inline;
+            color: darkgray;
+        }
+
+        .modal {
+            border: 3px solid green;
+        }
+
+        .heading {
+            <!--height: 1em;
+            padding: .5em;-->
+        }
+
+        .content {
+            overflow: auto;
+            border: 3px solid red;
+            height: 500px;
+        }
+
+        .scrollable {
+            border: 3px solid yellow;
+        }
+
+        .footer {
+            <!--height: 1em;
+            padding: .5em;-->
+        }
+    </style>
+
+    <title>Page Title</title>
+
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<div class="modal">
+    <div class="heading">
+
+        <button id="increase" class="button">+</button>
+        <button id="toggle" class="button">Show / Hide</button>
+        <button id="decrease" class="button">-</button>
+
+        <button id="demo" class="button">-</button>
+    </div>
+
+    <div class="content">
+        <div class="scrollable">
+
+            <section id="text">
+
+                <p class="paragraph" loc="0"><span class="sentence" loc="0"><em class="d">&nbsp;</em><span class="word" loc="0">Як</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="1">ка<em class="d">-</em>ли<em class="d">-</em>на</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="2">дів<em class="d">-</em>чи<em class="d">-</em>ну</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="3">від</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="4">по<em class="d">-</em>ло<em class="d">-</em>ну</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="5">вря<em class="d">-</em>ту<em class="d">-</em>ва<em class="d">-</em>ла</span><em class="d">&nbsp;</em>.</span></p>
+                <p class="paragraph" loc="1"><span class="sentence" loc="0"><em class="d">&nbsp;</em><span class="word" loc="0">Ко<em class="d">-</em>лись</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="1">дав<em class="d">-</em>но</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="2">в</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="3">од<em class="d">-</em>но<em class="d">-</em>му</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="4">се<em class="d">-</em>лі</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="5">зби<em class="d">-</em>ра<em class="d">-</em>ли<em class="d">-</em>ся</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="6">о<em class="d">-</em>дру<em class="d">-</em>жи<em class="d">-</em>ти<em class="d">-</em>ся</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="7">ко<em class="d">-</em>зак</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="8">і</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="9">дів<em class="d">-</em>чи<em class="d">-</em>на</span><em class="d">&nbsp;</em>-<em class="d">&nbsp;</em><span class="word" loc="10">кра<em class="d">-</em>су<em class="d">-</em>ня</span><em class="d">&nbsp;</em>.</span><span class="sentence" loc="1"> <em class="d">&nbsp;</em><span class="word" loc="0">Аж</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="1">тут</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="2">чор<em class="d">-</em>ним</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="3">ви<em class="d">-</em>хо<em class="d">-</em>ром</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="4">на<em class="d">-</em>ле<em class="d">-</em>ті<em class="d">-</em>ли</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="5">за<em class="d">-</em>гар<em class="d">-</em>бни<em class="d">-</em>ки</span><em class="d">&nbsp;</em>, <em class="d">&nbsp;</em><span class="word" loc="6">схо<em class="d">-</em>пи<em class="d">-</em>ли</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="7">кра<em class="d">-</em>су<em class="d">-</em>ню</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="8">й</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="9">зни<em class="d">-</em>кли</span><em class="d">&nbsp;</em>.</span></p>
+                <p class="paragraph" loc="2"><span class="sentence" loc="0"><em class="d">&nbsp;</em><span class="word" loc="0">Дів<em class="d">-</em>чи<em class="d">-</em>на</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="1">бу<em class="d">-</em>ла</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="2">не</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="3">тіль<em class="d">-</em>ки</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="4">вро<em class="d">-</em>дли<em class="d">-</em>ва</span><em class="d">&nbsp;</em>, <em class="d">&nbsp;</em><span class="word" loc="5">а</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="6">й</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="7">смі<em class="d">-</em>ли<em class="d">-</em>ва</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="8">та</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="9">кмі<em class="d">-</em>тли<em class="d">-</em>ва</span><em class="d">&nbsp;</em>.</span><span class="sentence" loc="1"> <em class="d">&nbsp;</em><span class="word" loc="0">Не<em class="d">-</em>се</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="1">ї<em class="d">-</em>ї</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="2">во<em class="d">-</em>ро<em class="d">-</em>жий</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="3">кінь</span><em class="d">&nbsp;</em>, <em class="d">&nbsp;</em><span class="word" loc="4">а</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="5">во<em class="d">-</em>на</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="6">ки<em class="d">-</em>да<em class="d">-</em>є</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="7">чер<em class="d">-</em>во<em class="d">-</em>ні</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="8">на<em class="d">-</em>ми<em class="d">-</em>стин<em class="d">-</em>ки</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="9">на</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="10">до<em class="d">-</em>ро<em class="d">-</em>гу</span><em class="d">&nbsp;</em>, <em class="d">&nbsp;</em><span class="word" loc="11">щоб</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="12">да<em class="d">-</em>ти</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="13">знак</span><em class="d">&nbsp;</em>, <em class="d">&nbsp;</em><span class="word" loc="14">де</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="15">ї<em class="d">-</em>ї</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="16">шу<em class="d">-</em>ка<em class="d">-</em>ти</span><em class="d">&nbsp;</em>.</span></p>
+                <p class="paragraph" loc="3"><span class="sentence" loc="0"><em class="d">&nbsp;</em><span class="word" loc="0">І</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="1">ста<em class="d">-</em>ло<em class="d">-</em>ся</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="2">ди<em class="d">-</em>во</span><em class="d">&nbsp;</em>! <em class="d">&nbsp;</em><span class="word" loc="3">На<em class="d">-</em>ми<em class="d">-</em>стин<em class="d">-</em>ки</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="4">по<em class="d">-</em>ча<em class="d">-</em>ли</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="5">про<em class="d">-</em>ро<em class="d">-</em>ста<em class="d">-</em>ти</span><em class="d">&nbsp;</em> — <em class="d">&nbsp;</em><span class="word" loc="6">й</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="7">ут<em class="d">-</em>во<em class="d">-</em>ри<em class="d">-</em>ли<em class="d">-</em>ся</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="8">ку<em class="d">-</em>щі</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="9">з</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="10">чер<em class="d">-</em>во<em class="d">-</em>ни<em class="d">-</em>ми</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="11">ке<em class="d">-</em>тя<em class="d">-</em>га<em class="d">-</em>ми</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="12">ка<em class="d">-</em>ли<em class="d">-</em>ни</span><em class="d">&nbsp;</em>.</span></p>
+                <p class="paragraph" loc="4"><span class="sentence" loc="0"><em class="d">&nbsp;</em><span class="word" loc="0">Як</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="1">по<em class="d">-</em>чув</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="2">ко<em class="d">-</em>зак</span><em class="d">&nbsp;</em>, <em class="d">&nbsp;</em><span class="word" loc="3">що</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="4">йо<em class="d">-</em>го</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="5">ко<em class="d">-</em>ха<em class="d">-</em>ну</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="6">в</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="7">по<em class="d">-</em>лон</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="8">за<em class="d">-</em>хо<em class="d">-</em>пи<em class="d">-</em>ли</span><em class="d">&nbsp;</em>, <em class="d">&nbsp;</em><span class="word" loc="9">ки<em class="d">-</em>нув<em class="d">-</em>ся</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="10">з</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="11">по<em class="d">-</em>бра<em class="d">-</em>ти<em class="d">-</em>ма<em class="d">-</em>ми</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="12">ї<em class="d">-</em>ї</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="13">наз<em class="d">-</em>до<em class="d">-</em>га<em class="d">-</em>ня<em class="d">-</em>ти</span><em class="d">&nbsp;</em>.</span><span class="sentence" loc="1"> <em class="d">&nbsp;</em><span class="word" loc="0">По<em class="d">-</em>ба<em class="d">-</em>чив<em class="d">-</em>ши</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="1">на</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="2">до<em class="d">-</em>ро<em class="d">-</em>зі</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="3">ку<em class="d">-</em>щі</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="4">ка<em class="d">-</em>ли<em class="d">-</em>ни</span><em class="d">&nbsp;</em>, <em class="d">&nbsp;</em><span class="word" loc="5">зро<em class="d">-</em>зу<em class="d">-</em>мів</span><em class="d">&nbsp;</em>: <em class="d">&nbsp;</em><span class="word" loc="6">це</span><em class="d">&nbsp;</em> — <em class="d">&nbsp;</em><span class="word" loc="7">звіс<em class="d">-</em>то<em class="d">-</em>чка</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="8">від</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="9">йо<em class="d">-</em>го</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="10">на<em class="d">-</em>ре<em class="d">-</em>че<em class="d">-</em>но<em class="d">-</em>ї</span><em class="d">&nbsp;</em>.</span><span class="sentence" loc="2"> <em class="d">&nbsp;</em><span class="word" loc="0">Наз<em class="d">-</em>до<em class="d">-</em>гна<em class="d">-</em>ли</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="1">ко<em class="d">-</em>за<em class="d">-</em>ки</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="2">за<em class="d">-</em>гар<em class="d">-</em>бни<em class="d">-</em>ків</span><em class="d">&nbsp;</em>, <em class="d">&nbsp;</em><span class="word" loc="3">пе<em class="d">-</em>ре<em class="d">-</em>мо<em class="d">-</em>гли</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="4">їх</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="5">у</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="6">бо<em class="d">-</em>ю</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="7">й</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="8">виз<em class="d">-</em>во<em class="d">-</em>ли<em class="d">-</em>ли</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="9">по<em class="d">-</em>ло<em class="d">-</em>нян<em class="d">-</em>ку</span><em class="d">&nbsp;</em>.</span></p>
+                <p class="paragraph" loc="5"><span class="sentence" loc="0"><em class="d">&nbsp;</em><span class="word" loc="0">Мо<em class="d">-</em>ло<em class="d">-</em>ді</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="1">по<em class="d">-</em>вер<em class="d">-</em>ну<em class="d">-</em>ли<em class="d">-</em>ся</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="2">до<em class="d">-</em>до<em class="d">-</em>му</span><em class="d">&nbsp;</em>, <em class="d">&nbsp;</em><span class="word" loc="3">спра<em class="d">-</em>ви<em class="d">-</em>ли</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="4">ве<em class="d">-</em>сі<em class="d">-</em>лля</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="5">та</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="6">жи<em class="d">-</em>ли</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="7">мир<em class="d">-</em>но</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="8">й</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="9">ща<em class="d">-</em>сли<em class="d">-</em>во</span><em class="d">&nbsp;</em>.</span><span class="sentence" loc="1"> <em class="d">&nbsp;</em><span class="word" loc="0">А</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="1">ка<em class="d">-</em>ли<em class="d">-</em>ну</span><em class="d">&nbsp;</em> — <em class="d">&nbsp;</em><span class="word" loc="2">сво<em class="d">-</em>ю</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="3">ря<em class="d">-</em>тів<em class="d">-</em>ни<em class="d">-</em>цю</span><em class="d">&nbsp;</em> — <em class="d">&nbsp;</em><span class="word" loc="4">по<em class="d">-</em>вік</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="5">ша<em class="d">-</em>ну<em class="d">-</em>ва<em class="d">-</em>ли</span><em class="d">&nbsp;</em>.</span></p>
+                <p class="paragraph" loc="6"><span class="sentence" loc="0"><em class="d">&nbsp;</em><span class="word" loc="0">Прав<em class="d">-</em>да</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="1">це</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="2">чи</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="3">ні</span><em class="d">&nbsp;</em>, <em class="d">&nbsp;</em><span class="word" loc="4">не<em class="d">-</em>ві<em class="d">-</em>до<em class="d">-</em>мо</span><em class="d">&nbsp;</em>.</span><span class="sentence" loc="1"> <em class="d">&nbsp;</em><span class="word" loc="0">А<em class="d">-</em>ле</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="1">ве<em class="d">-</em>сіль<em class="d">-</em>ний</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="2">ко<em class="d">-</em>ро<em class="d">-</em>вай</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="3">в</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="4">У<em class="d">-</em>кра<em class="d">-</em>ї<em class="d">-</em>ні</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="5">й</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="6">ни<em class="d">-</em>ні</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="7">при<em class="d">-</em>кра<em class="d">-</em>ша<em class="d">-</em>ють</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="8">ке<em class="d">-</em>тя<em class="d">-</em>га<em class="d">-</em>ми</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="9">ка<em class="d">-</em>ли<em class="d">-</em>ни</span><em class="d">&nbsp;</em>.</span><span class="sentence" loc="2"> <em class="d">&nbsp;</em><span class="word" loc="0">А</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="1">я<em class="d">-</em>го<em class="d">-</em>ди</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="2">ї<em class="d">-</em>ї</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="3">гір<em class="d">-</em>кі</span><em class="d">&nbsp;</em>, <em class="d">&nbsp;</em><span class="word" loc="4">на<em class="d">-</em>че</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="5">смак</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="6">сліз</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="7">і</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="8">не<em class="d">-</em>во<em class="d">-</em>лі</span><em class="d">&nbsp;</em>.</span><span class="sentence" loc="3"> <em class="d">&nbsp;</em><span class="word" loc="0">Як</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="1">не</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="2">ві<em class="d">-</em>ри<em class="d">-</em>те</span><em class="d">&nbsp;</em> — <em class="d">&nbsp;</em><span class="word" loc="3">скуш<em class="d">-</em>туй<em class="d">-</em>те</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="4">са<em class="d">-</em>мі</span><em class="d">&nbsp;</em>.</span></p>
+                <p class="paragraph" loc="7"><span class="sentence" loc="0"><em class="d">&nbsp;</em><span class="word" loc="0">З</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="1">то<em class="d">-</em>го</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="2">ча<em class="d">-</em>су</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="3">ді<em class="d">-</em>во<em class="d">-</em>чу</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="4">кра<em class="d">-</em>су</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="5">по<em class="d">-</em>рів<em class="d">-</em>ню<em class="d">-</em>ють</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="6">з</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="7">ка<em class="d">-</em>ли<em class="d">-</em>но<em class="d">-</em>ю</span><em class="d">&nbsp;</em>.</span><span class="sentence" loc="1"> <em class="d">&nbsp;</em><span class="word" loc="0">Про</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="1">цей</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="2">ча<em class="d">-</em>рів<em class="d">-</em>ний</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="3">кущ</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="4">скла<em class="d">-</em>де<em class="d">-</em>но</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="5">бе<em class="d">-</em>зліч</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="6">пі<em class="d">-</em>сень</span><em class="d">&nbsp;</em>, <em class="d">&nbsp;</em><span class="word" loc="7">вір<em class="d">-</em>шів</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="8">і</span><em class="d">&nbsp;</em> <em class="d">&nbsp;</em><span class="word" loc="9">при<em class="d">-</em>ка<em class="d">-</em>зок</span><em class="d">&nbsp;</em>.</span></p>
+
+            </section>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <button id="paragraphPrev" class="button">&lt;P</button>
+        <button id="paragraphNext" class="button">P&gt;</button>
+        <button id="sentencePrev" class="button">&lt;S</button>
+        <button id="sentenceNext" class="button">S&gt;</button>
+        <button id="wordPrev" class="button">&lt;W</button>
+        <button id="wordNext" class="button">W&gt;</button>
+    </div>
+</div>
+
+<script>
+    function resizeText(delta) {
+        if (document.body.style.fontSize === "") {
+            document.body.style.fontSize = "14px";
+        }
+        document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (delta) + "px";
+    }
+
+    document.getElementById('increase').addEventListener('click', function () {
+        resizeText(2);
+    });
+
+    document.getElementById('decrease').addEventListener('click', function () {
+        resizeText(-2);
+    });
+
+    document.getElementById('toggle').addEventListener('click', function () {
+        const content = document.getElementById('text');
+
+        if (content.className === 'd-visible') {
+            content.className = '';
+        } else {
+            content.className = 'd-visible';
+        }
+    });
+
+    var w = window.innerWidth
+        || document.documentElement.clientWidth
+        || document.body.clientWidth;
+
+    var h = window.innerHeight
+        || document.documentElement.clientHeight
+        || document.body.clientHeight;
+
+    var txt = "";
+    txt += "w: " + w + ", h: " + h + "";
+    document.getElementById("demo").innerHTML = txt;
+</script>
+
+</body>
+</html>
